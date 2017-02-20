@@ -63,8 +63,8 @@ let s:types   = {
 function s:delimiters()
   let l:ft = &filetype
 
-  let s:start = '/*'
-  let s:end = '*/'
+  let s:start = '#'
+  let s:end = '#'
   let s:fill  = '*'
 
   if exists('b:fortytwoheader_delimiters') &&
@@ -119,7 +119,7 @@ function s:line(n)
 endfunction
 
 function s:user()
-  let l:user = $USER
+  let l:user = $USER42
   if strlen(l:user) == 0
     let l:user = 'marvin'
   endif
@@ -127,7 +127,7 @@ function s:user()
 endfunction
 
 function s:mail()
-  let l:mail = $MAIL
+  let l:mail = $MAIL42
   if strlen(l:mail) == 0
     let l:mail = 'marvin@42.fr'
   endif
@@ -176,7 +176,7 @@ function s:fortytwoheader()
   endif
 endfunction
 
-command! Fortytwoheader call s:fortytwoheader ()
+command! FortyTwoHeader call s:fortytwoheader ()
 
 " This part has moved to ../after/plugin/stdheader.vim
 "augroup fortytwoheader
