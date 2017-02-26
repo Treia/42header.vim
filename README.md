@@ -4,7 +4,7 @@ Add and update the [42](http://42.fr/) comment header at the top of your files
 
 ## Installation
 
-The `$USER` and `$MAIL` environment variables must be set (in your `zshrc` or
+The `$USER42` and `$MAIL42` environment variables must be set (in your `zshrc` or
 `bashrc` file).
 
 ### Install with [vim-plug](https://github.com/junegunn/vim-plug)
